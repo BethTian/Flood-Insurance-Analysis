@@ -1,0 +1,12 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Raw data
+data/raw_data/NC_NFIP_policies/FimaNfipPoliciesV2_NC.csv
+
+# macOS
+.DS_Store
