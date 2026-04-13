@@ -69,7 +69,7 @@ if __name__ == "__main__":
             "AGRIVALUE_DENS_log", "ALR_VALA_z"
             ]
     new_df = filter_data(df, deleted_lst)
-    # high_corr, kmo_model, kmo_all, chi_square, p_value = get_test(new_df)
+    high_corr, kmo_model, kmo_all, chi_square, p_value = get_test(new_df)
 
     # #select the factor number 
     # dct = get_n_factor(new_df)
@@ -77,3 +77,7 @@ if __name__ == "__main__":
     
     run_efa(new_df, 5, rotation_method='promax', loading_thre=0.6,
             save=True, output_dir=save_path)
+    
+    factor_name = ['Housing ','socioeconomic vulnerability',
+                   'Age structure', 'Hazard Risk Exposure',
+                    'Insurance Vulnerability']
